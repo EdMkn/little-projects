@@ -8,6 +8,7 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { EditBookComponent } from './edit-book/edit-book.component';
 import { ViewBookComponent } from './view-book/view-book.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This projects allows to manage books
 
 # functionnalities
-Add books
+Add books (ok)
 Modify books
-view books
+view books (ok)
 Delete books
-
+<!--rajouter la base de données>
 <!-->
 ## Development server
 
