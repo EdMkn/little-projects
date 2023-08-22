@@ -1,7 +1,7 @@
 import { Component, Input, OnInit, Type } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { ToasterService } from 'angular2-toaster';
+import { ToastrService } from 'ngx-toastr';
 import { HttpProviderService } from '../Service/http-provider.service';
 
 @Component({
@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
   closeResult = '';
   bookList: any = [];
   constructor(private router: Router, private modalService: NgbModal,
-    private toastr: ToasterService, private httpProvider : HttpProviderService) { }
+    private toastr: ToastrService, private httpProvider : HttpProviderService) { }
 
   ngOnInit(): void {
     this.getAllBook();
@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit {
       if (data != null && data.body != null) {
         var resultData = data.body;
         if (resultData != null && resultData.isSuccess) {
-          this.toastr.pop("success",'',resultData.message);
+          this.toastr.success(resultData.message);
           this.getAllBook();
         }
       }
