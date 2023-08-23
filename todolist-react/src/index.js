@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+const DATA = [
+  { id: "todo-0", name: "Balayer", completed: true },
+  { id: "todo-1", name: "Nettoyer", completed: false },
+  { id: "todo-2", name: "Répeter", completed: false },
+];
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App tasks={DATA}/>
   </React.StrictMode>
 );
 
