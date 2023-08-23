@@ -17,7 +17,10 @@ export default function Todo(props) {
             <button type="button" className="btn">
                 Editer <span className="visually-hidden">{props.name}</span>
             </button>
-            <button type="button" className="btn btn__danger">
+            <button 
+                type="button" 
+                className="btn btn__danger"
+                onClick={()=>props.deleteTask(props.id)}>
                 Supprimer <span className="visually-hidden">{props.name}</span>
             </button>
             </div>
