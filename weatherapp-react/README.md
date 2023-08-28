@@ -1,0 +1,1 @@
+# reading the weather of your localization
