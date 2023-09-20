@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
+const PORT = 5000;
+//const HOST = '0.0.0.0';
 
 //middleware
 app.use(cors());
@@ -78,6 +80,6 @@ app.delete("/tasks/:id", async(req,res)=>{
         console.error(err.message);
     };
 })
-app.listen(5000, ()=>{
+app.listen(PORT, ()=>{
     console.log("server has started on port 5000");
 });
