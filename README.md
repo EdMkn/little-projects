@@ -20,3 +20,7 @@ Liste des Projets personnels:
  * Application permettant de lire la météo d'une localisation
  * Technologies utilisées: React
  * Statut: Complet
+
+## pern_task
+ * Application de gestion de tâches
+ * Application web regroupant node, Postgres et Express en Backend, react en frontend
